@@ -1,4 +1,4 @@
-#  Movoto Multi-City Listing Extractor
+#  Movoto Property Listings Data Pipeline
 
 A Python web scraper built with Playwright that collects real estate property listings from Movoto.com. It navigates JS-rendered listing pages, harvests property URLs, then visits each listing to extract structured property data — all while mimicking real browser behavior to avoid detection.
 
