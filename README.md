@@ -3,9 +3,7 @@
 A Python web scraper built with Playwright that collects real estate property listings from Movoto.com. It navigates JS-rendered listing pages, harvests property URLs, then visits each listing to extract structured property data, while mimicking real browser behavior to avoid detection.
 
 ## Project Summary
-This scraper navigates Movoto's dynamically rendered listing pages, collects article links, and visits each property page to capture key details including address, price, bedrooms, bathrooms, square footage, property type, and year built. All data is structured and ready for CSV export via pandas. Features configurable city (currently set to Phoenix, AZ) and page range. Designed for market research, price monitoring, and real estate data analysis.
-
-Built to handle challenges like JavaScript rendering, dynamic DOM content, bot detection, and unpredictable page structures with graceful error handling throughout.
+A Python-based web scraping pipeline using Playwright to extract structured real estate listing data from Movoto, with a configurable city parameter (currently set to Phoenix, AZ). The scraper programmatically navigates JavaScript-rendered listing pages, iterates through pagination, collects property URLs, and extracts key details from individual listings including address, price, bedrooms, bathrooms, square footage, property type, and year built. Implements dynamic Chrome user-agent generation, controlled navigation timing, and DOM-state synchronization via explicit selector waits, with defensive error handling under dynamic content shifts ensuring high reliability. Output is normalised for CSV export using Pandas, ideal for market research, price monitoring, and real estate analysis.
 
 ## Features
 - Dynamic User-Agent rotation: Generates realistic Chrome browser fingerprints across Windows and macOS profiles
