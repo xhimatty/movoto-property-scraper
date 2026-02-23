@@ -31,4 +31,4 @@ Each property record includes:
 - property_type: Type of property (e.g. Single Family, Condo)
 - year_built: Year the property was built
 
-#### Python Script: [Click to view the script]
+#### Python Script: [Click to view the script](https://github.com/xhimatty/movoto-property-scraper/blob/main/rent.py)
