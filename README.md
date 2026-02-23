@@ -30,3 +30,5 @@ Each property record includes:
 - sqft: Square footage 
 - property_type: Type of property (e.g. Single Family, Condo)
 - year_built: Year the property was built
+
+#### Python Script: [Click to view the script]
