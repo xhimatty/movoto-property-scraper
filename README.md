@@ -16,11 +16,11 @@ Built to handle challenges like JavaScript rendering, dynamic DOM content, bot d
 - Configurable run options: Control headless mode, speed (slow_mo), configurable city and page range (currently set to Phoenix, AZ)
 
 ## Tech Stack
-• Language: Python 3.x
-• Automation Engine: Playwright (Chromium)
-• Data Manipulation: Pandas
-• Browser Management: Custom Dynamic User-Agent Generation
-• Selectors: CSS Selectors & Playwright Locators
+    Python
+    Playwright (Chromium)
+    Pandas
+    Custom Dynamic User-Agent Generation
+    CSS Selectors & Playwright Locators
 
 ## Data Extracted
 Each property record includes:
