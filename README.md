@@ -36,4 +36,23 @@ Each property record includes:
 - property_type: Type of property (e.g. Single Family, Condo)
 - year_built: Year the property was built
 
-#### Python Script: [Click to view the script](https://github.com/xhimatty/movoto-property-scraper/blob/main/rent.py)
+
+### Example Output
+
+    {
+      "url": "https://www.movoto.com/arlington-tx/4303-steeplechase-trl-arlington-tx-76016-402_11174084/",
+      "address": "4303 Steeplechase Trl, Arlington, TX 76016",
+      "price": 430000,
+      "bedroom": 4,
+      "bathroom": 2,
+      "sqft": 2428,
+      "property_type": "Single Family",
+      "year_built": 1975
+    }
+
+
+## Notes
+
+>[!NOTE]
+>Available fields may vary depending on the listing.
+
