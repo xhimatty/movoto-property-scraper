@@ -1,4 +1,4 @@
-#  Movoto Property Listings Data Pipeline
+#  Movoto Real Estate Listings Scraper
 
 A data extraction system built with Python and Playwright that collects real estate property listings from Movoto.com. It navigates JS-rendered listing pages, harvests property URLs, then visits each listing to extract structured property data, while mimicking real browser behavior to avoid detection.
 
