@@ -16,39 +16,42 @@ Manual collection of property listings from JavaScript-rendered real estate webs
 - Deep Data Extraction: Two-stage architecture that first collects listing URLs from search results and then performs deep-dives into individual property pages for comprehensive data collection.
 - Robust error handling: Timeouts and missing elements are caught gracefully without crashing the scraper
 - Structured data output: Results are stored in a pandas DataFrame, ready for CSV export
-- Configurable run options: Control headless mode, speed (slow_mo), configurable city and page range (currently set to Phoenix, AZ)
+- Configurable run options: Configurable city and page range (currently set to Phoenix, AZ)
 
-## Tech Stack
-    Python
-    Playwright (Chromium)
-    Pandas
-    Custom Dynamic User-Agent Generation
-    CSS Selectors & Playwright Locators
 
 ## Data Extracted
 Each property record includes:
-- url: Direct link to the property listing
-- address: Full property address
-- price: Listed sale price
-- bedroom: Number of bedrooms
-- bathroom: Number of bathrooms
-- sqft: Square footage 
-- property_type: Type of property (e.g. Single Family, Condo)
-- year_built: Year the property was built
+|Output|Description|
+|:----|:----|
+| `url` | Direct link to the property listing |
+| `address` | Full property address |
+| `price` | Listed sale price |
+| `bedrooms` | Number of bedrooms |
+| `bathrooms` | Number of bathrooms |
+| `sqft` | Square footage |
+| `property_type` | Type of property (e.g. Single Family, Condo) |
+| `year_built` | Year the property was built |
 
 
 ### Example Output
 
-    {
-      "url": "https://www.movoto.com/arlington-tx/4303-steeplechase-trl-arlington-tx-76016-402_11174084/",
-      "address": "4303 Steeplechase Trl, Arlington, TX 76016",
-      "price": 430000,
-      "bedroom": 4,
-      "bathroom": 2,
-      "sqft": 2428,
-      "property_type": "Single Family",
-      "year_built": 1975
-    }
+```json
+{
+  "url": "https://www.movoto.com/arlington-tx/4303-steeplechase-trl-arlington-tx-76016-402_11174084/",
+  "address": "4303 Steeplechase Trl, Arlington, TX 76016",
+  "price": 430000,
+  "bedroom": 4,
+  "bathroom": 2,
+  "sqft": 2428,
+  "property_type": "Single Family",
+  "year_built": 1975
+}
+```
+
+## Tech Stack
+    Python
+    Playwright
+    Pandas
 
 
 ## Notes
