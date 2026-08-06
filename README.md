@@ -1,14 +1,16 @@
 #  Movoto Property Listings Data Pipeline
 
-A Python web scraper built with Playwright that collects real estate property listings from Movoto.com. It navigates JS-rendered listing pages, harvests property URLs, then visits each listing to extract structured property data, while mimicking real browser behavior to avoid detection.
+A data extraction system built with Python and Playwright that collects real estate property listings from Movoto.com. It navigates JS-rendered listing pages, harvests property URLs, then visits each listing to extract structured property data, while mimicking real browser behavior to avoid detection.
 
 ![image](https://github.com/user-attachments/assets/60309bf6-e33e-4c19-a32e-d7d6c5ecb3fd)
 
 
-## Project Summary
-A Python-based web scraping pipeline using Playwright to extract structured real estate listing data from Movoto, with a configurable city parameter (currently set to Phoenix, AZ). The scraper programmatically navigates JavaScript-rendered listing pages, iterates through pagination, collects property URLs, and extracts key details from individual listings including address, price, bedrooms, bathrooms, square footage, property type, and year built. Implements dynamic Chrome user-agent generation, controlled navigation timing, and DOM-state synchronization via explicit selector waits, with defensive error handling under dynamic content shifts ensuring high reliability. Output is normalised for CSV export using Pandas, ideal for market research, price monitoring, and real estate analysis.
+## Overview
+
+Manual collection of property listings from JavaScript-rendered real estate websites is repetitive and difficult to scale. Traditional HTML parsing alone is often insufficient because listing content is rendered dynamically in the browser. This system automates the collection of property listings from Movoto by navigating search results, collecting listing URLs, and extracting structured property information from individual listing pages. The system supports configurable search locations, handles pagination, synchronises with dynamic page content using explicit Playwright waits, and exports clean, structured datasets for real estate research, market analysis, and property monitoring.
 
 ## Features
+
 - Dynamic User-Agent rotation: Generates realistic Chrome browser fingerprints across Windows and macOS profiles
 - Playwright-powered automation: Handles JS-rendered content that traditional scrapers can't access
 - Deep Data Extraction: Two-stage architecture that first collects listing URLs from search results and then performs deep-dives into individual property pages for comprehensive data collection.
